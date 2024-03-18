@@ -137,7 +137,7 @@ operations.
 - **Identify top ten musicians and their total earnings for each one:**
 
 
-### Scenario 1: Customer Analysis
+## Scenario 1: Customer Analysis
 #### •	Question 1: Who are the top customers in terms of total spending?
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/5dcd7b56-e93d-4dcf-ab39-a8487f217b97)
@@ -156,7 +156,7 @@ operations.
 -	The distribution of customers across other countries varies, with several countries having 1 or 2 customers each.
 
 
-### Scenario 2: Employee Performance
+## Scenario 2: Employee Performance
 #### • Question 1: How many invoices has each employee processed?
 - This summary provides a quick overview of the total invoices processed by each employee, highlighting the top performers and those who haven't processed any invoices.
 
@@ -171,7 +171,7 @@ operations.
 -	Employees Andrew Adams, Nancy Edwards, Michael Mitchell, Robert King, and Laura Callahan have not processed any invoices (Total Invoices is 0).
 
 
-### Scenario 3: Genre Popularity
+## Scenario 3: Genre Popularity
 #### - Question 1: How much was spent overall on each genre of music?
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/b912dcf4-0ef6-4914-a40c-be309bfaf8e7)
@@ -182,7 +182,7 @@ operations.
 - To Maximize Revenue should increase production in Genre Music Rock, Latin, Metal and Alternative & Punk.
 
 
-### Scenario 4: Sales Insights:
+## Scenario 4: Sales Insights:
 #### -	Question 1: Sales Trends Over Time
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/b3a76f72-2936-41c3-8339-c4486ffd31e2)
