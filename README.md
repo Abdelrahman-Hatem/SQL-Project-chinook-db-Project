@@ -138,7 +138,7 @@ operations.
 
 
 ## Scenario 1: Customer Analysis
-#### •	Question 1: Who are the top customers in terms of total spending?
+### •	Question 1: Who are the top customers in terms of total spending?
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/5dcd7b56-e93d-4dcf-ab39-a8487f217b97)
 
@@ -147,7 +147,7 @@ operations.
 -	Helena From Czech Republic came in first which spent money in music amount 49.62$.
 -	The United States holds four records for the most common customer spending on music Richard, Julia, Frank, and Victor.
 
-#### • Question 2: what the customer demographics and location are.
+### • Question 2: what the customer demographics and location are.
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/7a4e3147-6bde-4ff3-9677-080dfaefd31b)
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/b8b69a34-db66-4024-a8c3-2302ddf4f8d7)
@@ -157,7 +157,7 @@ operations.
 
 
 ## Scenario 2: Employee Performance
-#### • Question 1: How many invoices has each employee processed?
+### • Question 1: How many invoices has each employee processed?
 - This summary provides a quick overview of the total invoices processed by each employee, highlighting the top performers and those who haven't processed any invoices.
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/ed0a3234-acc8-40de-9809-fc27d6831c0d)
@@ -172,7 +172,7 @@ operations.
 
 
 ## Scenario 3: Genre Popularity
-#### - Question 1: How much was spent overall on each genre of music?
+### - Question 1: How much was spent overall on each genre of music?
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/b912dcf4-0ef6-4914-a40c-be309bfaf8e7)
 
@@ -183,7 +183,7 @@ operations.
 
 
 ## Scenario 4: Sales Insights:
-#### -	Question 1: Sales Trends Over Time
+### -	Question 1: Sales Trends Over Time
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/b3a76f72-2936-41c3-8339-c4486ffd31e2)
 
@@ -193,14 +193,14 @@ operations.
 
 - Increase in 2010-2011: There's a notable increase in total sales starting in January 2010, peaking in March 2011.
 
-#### - Question 2: High-Performing Genres and Artists
+### - Question 2: High-Performing Genres and Artists
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/d8635593-dd6d-41ba-82a3-8a536a83ab48)
 
 - The high-performing genres in the Chinook Music Store are Metal and Rock, with Metallica and U2 leading in sales.
 
 
-#### -	Question 3: What is the number of bills of the most common music for each country?
+### -	Question 3: What is the number of bills of the most common music for each country?
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/941c5f46-4f5d-4727-8e7f-10ace13a8da9)
 
@@ -210,7 +210,7 @@ operations.
 - Rock music is the most common music in all countries except Sweden, where the genre Latin is most common.
 
 
-#### - Question 4: What are the top ten musicians and their total earnings for each one?	
+### - Question 4: What are the top ten musicians and their total earnings for each one?	
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/3a1fe0c4-101a-46db-9f18-3f0269e043fe)
 
