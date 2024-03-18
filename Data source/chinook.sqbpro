@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/projects/sql/chinook-db Project/chinook.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3978"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainAlbum"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Album" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="70"/><column index="2" value="300"/><column index="3" value="68"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="query 1.sql">SELECT
+    c.CustomerId,
+    c.FirstName || ' ' || c.LastName AS CustomerName,
+    SUM(i.Total) AS TotalSpending
+FROM
+    Customer c
+JOIN
+    Invoice i ON c.CustomerId = i.CustomerId
+GROUP BY
+    c.CustomerId, CustomerName
+ORDER BY
+    TotalSpending DESC
+LIMIT 10; -- Adjust the limit as needed
+</sql><sql name="query 2.sql">SELECT
+    Country,
+    COUNT(CustomerId) AS TotalCustomers
+FROM
+    Customer
+GROUP BY
+    Country
+ORDER BY
+    TotalCustomers DESC;</sql><sql name="query 3.sql">SELECT
+    e.EmployeeId,
+    e.FirstName || ' ' || e.LastName AS EmployeeName,
+    COUNT(i.InvoiceId) AS TotalInvoices
+FROM
+    Employee e
+LEFT JOIN
+    Customer c ON e.EmployeeId = c.SupportRepId
+LEFT JOIN
+    Invoice i ON c.CustomerId = i.CustomerId
+GROUP BY
+    e.EmployeeId, EmployeeName
+ORDER BY
+    TotalInvoices DESC;</sql><sql name="query 4.sql">SELECT
+    g.Name AS Genre,
+    ROUND(SUM(il.UnitPrice * il.Quantity)) AS TotalSpendForGenre
+FROM
+    InvoiceLine il
+JOIN
+    Track t ON t.TrackId = il.TrackId
+JOIN
+    Genre g ON g.GenreId = t.GenreId
+GROUP BY
+    g.Name
+ORDER BY
+    TotalSpendForGenre DESC;
+</sql><sql name="query 5.sql">SELECT
+    strftime('%Y-%m', InvoiceDate) AS YearMonth,
+    SUM(Total) AS TotalSales
+FROM
+    Invoice
+GROUP BY
+    YearMonth
+ORDER BY
+    YearMonth;
+	
+	
+</sql><sql name="query 6.sql">SELECT
+    g.Name AS Genre,
+    ar.Name AS Artist,
+    COUNT(il.InvoiceLineId) AS TotalSales
+FROM
+    Genre g
+JOIN
+    Track t ON g.GenreId = t.GenreId
+JOIN
+    InvoiceLine il ON t.TrackId = il.TrackId
+JOIN
+    Album al ON t.AlbumId = al.AlbumId
+JOIN
+    Artist ar ON al.ArtistId = ar.ArtistId
+GROUP BY
+    Genre, Artist
+ORDER BY
+    TotalSales DESC
+LIMIT 10;
+</sql><sql name="query 7.sql">SELECT
+    BillingCountry AS Country, Genre, units_sold
+FROM (
+    SELECT
+        i.BillingCountry,
+        g.Name AS Genre,
+        COUNT(g.Name) AS units_sold
+    FROM
+        Track t
+    JOIN
+        Genre g ON t.GenreId = g.GenreId
+    JOIN
+        InvoiceLine il ON t.TrackId = il.TrackId
+    JOIN
+        Invoice i ON il.InvoiceId = i.InvoiceId
+    GROUP BY
+        i.BillingCountry, g.Name
+    ORDER BY
+        i.BillingCountry, units_sold DESC
+) AS subquery
+GROUP BY
+    Country
+ORDER BY
+    units_sold DESC;</sql><sql name="query 8.sql">SELECT
+    a.ArtistId,
+    a.Name AS Artist_Name,
+    Round(SUM(il.UnitPrice * il.Quantity), 2) AS Artist_Total
+FROM
+    InvoiceLine il
+JOIN
+    Track trk ON il.TrackId = trk.TrackId
+JOIN
+    Album alb ON alb.AlbumId = trk.AlbumId
+JOIN
+    Artist a ON a.ArtistId = alb.ArtistId
+GROUP BY
+    a.ArtistId
+ORDER BY
+    Artist_Total DESC
+LIMIT 10;
+</sql><current_tab id="7"/></tab_sql></sqlb_project>
