@@ -20,7 +20,7 @@ operations.
 
 ## 4. Tools Used
 
-- SQLite: Employed for managing the database and executing SQL queries.
+- DB Browser for SQLite : Employed for managing the database and executing SQL queries.
 
 
 ## 5. Data Overview
