@@ -6,6 +6,9 @@ and popular music genres. This comprehensive SQL-driven case study offers insigh
 customer behavior, and employee contributions, providing valuable strategic perspectives for the music store's 
 management. 
 
+[![DB Browser for SQLite](https://img.shields.io/badge/DB%20Browser%20for%20SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlitebrowser.org/)
+![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346.svg?style=for-the-badge&logo=Microsoft-Excel&logoColor=white) 
+
 ## 2. Introduction: 
 - in the dynamic world of music retail, understanding customer behavior, employee performance, and market trends is 
 crucial for making informed business decisions. The Chinook Database serves as a comprehensive repository of 
