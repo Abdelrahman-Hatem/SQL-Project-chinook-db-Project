@@ -21,7 +21,7 @@ operations.
 ## 4. Tools Used
 
 - DB Browser for SQLite : Employed for managing the database and executing SQL queries.
-
+- Excel: Used for creating additional charts and graphs to complement the data analysis. 
 
 ## 5. Data Overview
 
