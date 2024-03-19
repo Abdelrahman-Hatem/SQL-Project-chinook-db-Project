@@ -18,7 +18,12 @@ and address key questions. By Benefit from the relationships between various tab
 information about customer spending patterns, popular genres, and other aspects critical to optimizing the music store's 
 operations.
 
-## 4. Data Overview
+## 4. Tools Used
+
+- SQLite: Employed for managing the database and executing SQL queries.
+
+
+## 5. Data Overview
 
 ### 1. Customer Table:
 - **CustomerId** (Primary Key)
@@ -106,12 +111,12 @@ operations.
 - **PlaylistId** (Composite Foreign Key referencing PlaylistId)
 - **TrackId** (Composite Foreign Key referencing TrackId)
 
-## 5. the schema for the Chinook Database: 
+## 6. the schema for the Chinook Database: 
 
 ![image](https://github.com/Abdelrahman-Hatem/SQL-Project-chinook-db-Project/assets/60587162/c305bacc-93ef-428f-bd2d-c739363df5b1)
 
 
-## 6. Analysis
+## 7. Analysis
 
 ### 1. Customer Analysis:
 - **Identify top customers in terms of total spending:** 
@@ -220,7 +225,7 @@ operations.
 -	To Maximize Revenue, should increase the production of songs for Iron Maiden and U2
 
 
-## Recommendations
+## 8. Recommendations
 #### 1 -	Offer incentives to top customers to foster motivation and encourage their continued loyalty to the company.
 #### 2 -	Seek feedback from customers on why they prefer Rock Music over other genres. Utilize this input to enhance and diversify the overall music collection.
 #### 3 -	Enhance propaganda and promotional efforts for a broader range of music genres to attract new customers, ultimately boosting the company's revenue.
